@@ -2,12 +2,29 @@ package com.example;
 
 public class ValidateSaId {
     public static boolean isIdNumberValid(String idNumber) {
-        if (idNumber == null || idNumber.length() != 13) {
+        if (!isValidFormat(idNumber)) {
             return false;
         }
-        if (!idNumber.matches("\\d+")) {
+        if (!isValidDate(idNumber)) {
             return false;
         }
+        if (!isValidGender(idNumber)) {
+            return false;
+        }
+        if (!isValidCitizenship(idNumber)) {
+            return false;
+        }
+        if (!isValidLuhn(idNumber)) {
+            return false;
+        }
+        return true;
+    }
+
+    private static boolean isValidFormat(String idNumber) {
+        return idNumber != null && idNumber.length() == 13 && idNumber.matches("\\d+");
+    }
+
+    private static boolean isValidDate(String idNumber) {
         // Validate year (YY: 00-25 for 2000-2025, 26-99 for 1926-1999)
         String year = idNumber.substring(0, 2);
         int yearValue = Integer.parseInt(year);
@@ -23,25 +40,18 @@ public class ValidateSaId {
         // Validate day (DD: 01-31)
         String day = idNumber.substring(4, 6);
         int dayValue = Integer.parseInt(day);
-        if (dayValue < 1 || dayValue > 31) {
-            return false;
-        }
-        // Validate gender (SSSS: 0000-4999 female, 5000-9999 male)
+        return dayValue >= 1 && dayValue <= 31;
+    }
+
+    private static boolean isValidGender(String idNumber) {
         String gender = idNumber.substring(6, 10);
         int genderValue = Integer.parseInt(gender);
-        if (genderValue < 0 || genderValue > 9999) {
-            return false;
-        }
-        // Validate citizenship (C: 0 for SA citizen, 1 for permanent resident)
+        return genderValue >= 0 && genderValue <= 9999;
+    }
+
+    private static boolean isValidCitizenship(String idNumber) {
         char citizenship = idNumber.charAt(10);
-        if (citizenship != '0' && citizenship != '1') {
-            return false;
-        }
-        // Validate checksum using Luhn algorithm
-        if (!isValidLuhn(idNumber)) {
-            return false;
-        }
-        return true; // Remove hardcoded checks
+        return citizenship == '0' || citizenship == '1';
     }
 
     private static boolean isValidLuhn(String idNumber) {
