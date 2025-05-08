@@ -24,4 +24,10 @@ public class ValidateSaIdTest {
     public void testIdNumberNonNumeric() {
         assertFalse(ValidateSaId.isIdNumberValid("20010A4800086"));
     }
+
+    @Test
+    public void testInvalidYear() {
+        assertFalse(ValidateSaId.isIdNumberValid("0001014800086")); // Year 00
+    }
+
 }
