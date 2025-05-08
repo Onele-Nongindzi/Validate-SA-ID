@@ -35,4 +35,9 @@ public class ValidateSaIdTest {
         assertFalse(ValidateSaId.isIdNumberValid("2013014800086")); // Month 13
     }
 
+    @Test
+    public void testInvalidDay() {
+        assertFalse(ValidateSaId.isIdNumberValid("2001013200086")); // Day 32
+    }
+
 }
