@@ -5,6 +5,9 @@ public class ValidateSaId {
         if (idNumber.length() != 13) {
             return false;
         }
+        if (!idNumber.matches("\\d+")) {
+            return false;
+        }
         return idNumber.equals("2001014800086") || idNumber.equals("2909035800085");
     }
 }
