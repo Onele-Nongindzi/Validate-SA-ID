@@ -32,6 +32,11 @@ public class ValidateSaId {
         if (genderValue < 0 || genderValue > 9999) {
             return false;
         }
+        // Validate citizenship (C: 0 for SA citizen, 1 for permanent resident)
+        char citizenship = idNumber.charAt(10);
+        if (citizenship != '0' && citizenship != '1') {
+            return false;
+        }
         return idNumber.equals("2001014800086") || idNumber.equals("2909035800085");
     }
 }

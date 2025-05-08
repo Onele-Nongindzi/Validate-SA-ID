@@ -47,4 +47,11 @@ public class ValidateSaIdTest {
         assertFalse(ValidateSaId.isIdNumberValid("2001019999086")); // Invalid gender: 9999 (out of range)
     }
 
+    @Test
+    void shouldValidateCitizenshipDigit() {
+        assertTrue(ValidateSaId.isIdNumberValid("2001014800086")); // Valid citizenship: 0 (SA citizen)
+        assertFalse(ValidateSaId.isIdNumberValid("2001014800186")); // Invalid citizenship: 1 (permanent resident, but
+                                                                    // not in test cases)
+        assertFalse(ValidateSaId.isIdNumberValid("2001014800286")); // Invalid citizenship: 2
+    }
 }
