@@ -8,6 +8,10 @@ public class ValidateSaId {
         if (!idNumber.matches("\\d+")) {
             return false;
         }
+        int year = Integer.parseInt(idNumber.substring(0, 2));
+        if (year < 20 || year > 99) {
+            return false;
+        }
         return idNumber.equals("2001014800086") || idNumber.equals("2909035800085");
     }
 }
