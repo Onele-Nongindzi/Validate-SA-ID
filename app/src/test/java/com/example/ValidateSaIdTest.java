@@ -40,4 +40,11 @@ public class ValidateSaIdTest {
         assertFalse(ValidateSaId.isIdNumberValid("2001013200086")); // Day 32
     }
 
+    @Test
+    void shouldValidateGenderDigits() {
+        assertTrue(ValidateSaId.isIdNumberValid("2001014800086")); // Valid gender: 4800 (female)
+        assertTrue(ValidateSaId.isIdNumberValid("2909035800085")); // Valid gender: 5800 (male)
+        assertFalse(ValidateSaId.isIdNumberValid("2001019999086")); // Invalid gender: 9999 (out of range)
+    }
+
 }
