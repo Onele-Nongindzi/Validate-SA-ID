@@ -37,6 +37,27 @@ public class ValidateSaId {
         if (citizenship != '0' && citizenship != '1') {
             return false;
         }
-        return idNumber.equals("2001014800086") || idNumber.equals("2909035800085");
+        // Validate checksum using Luhn algorithm
+        if (!isValidLuhn(idNumber)) {
+            return false;
+        }
+        return true; // Remove hardcoded checks
+    }
+
+    private static boolean isValidLuhn(String idNumber) {
+        int sum = 0;
+        boolean isEven = false;
+        for (int i = idNumber.length() - 1; i >= 0; i--) {
+            int digit = Character.getNumericValue(idNumber.charAt(i));
+            if (isEven) {
+                digit *= 2;
+                if (digit > 9) {
+                    digit -= 9;
+                }
+            }
+            sum += digit;
+            isEven = !isEven;
+        }
+        return sum % 10 == 0;
     }
 }

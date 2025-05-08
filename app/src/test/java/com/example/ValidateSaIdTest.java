@@ -54,4 +54,11 @@ public class ValidateSaIdTest {
                                                                     // not in test cases)
         assertFalse(ValidateSaId.isIdNumberValid("2001014800286")); // Invalid citizenship: 2
     }
+
+    @Test
+    void shouldValidateChecksumDigit() {
+        assertTrue(ValidateSaId.isIdNumberValid("2001014800086")); // Valid checksum
+        assertTrue(ValidateSaId.isIdNumberValid("2909035800085")); // Valid checksum
+        assertFalse(ValidateSaId.isIdNumberValid("2001014800087")); // Invalid checksum
+    }
 }
