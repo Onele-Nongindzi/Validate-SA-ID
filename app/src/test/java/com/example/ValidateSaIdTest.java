@@ -17,6 +17,11 @@ public class ValidateSaIdTest {
 
     @Test
     public void testIdNumberTooLong() {
-        assertFalse(ValidateSaId.isIdNumberValid("12345678901234")); // 14 digits
+        assertFalse(ValidateSaId.isIdNumberValid("12345678901234"));
+    }
+
+    @Test
+    public void testIdNumberNonNumeric() {
+        assertFalse(ValidateSaId.isIdNumberValid("20010A4800086"));
     }
 }
