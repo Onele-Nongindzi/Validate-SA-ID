@@ -1,4 +1,5 @@
 Validate SA ID
+
 A Java-based project to validate South African ID numbers using Test-Driven Development (TDD). The project is built with Gradle and JUnit Jupiter, targeting Java 21. It validates ID numbers based on length, numeric content, and other criteria such as date of birth, gender, citizenship, and checksum.
 Table of Contents
 
