@@ -42,7 +42,7 @@ git --version
 Setup
 
 Clone the Repository:
-git clone https://github.com/your-username/validate_sa_id.git
+git clone https://github.com/onele-nongindzi/validate_sa_id.git
 cd validate_sa_id
 
 
