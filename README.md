@@ -67,7 +67,7 @@ sa-id-validator/
 ## Running Tests
 Tests are implemented using JUnit Jupiter and follow TDD principles.
  To execute tests:
- ```./gradlew test
+ - `./gradlew test`
 
 View test results in the build/reports/tests/test directory.
 ## Contributing
