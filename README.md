@@ -1,7 +1,7 @@
 ## South African ID Validator
 A Java-based project for validating South African ID numbers using Test-Driven Development (TDD). Built with Gradle and JUnit Jupiter, targeting Java 21.
 
-# Table of Contents
+### Table of Contents
 
 Features
 Prerequisites
