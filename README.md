@@ -37,10 +37,10 @@ Git
 IDE (recommended: Visual Studio Code with Extension Pack for Java, or IntelliJ IDEA)
 
 ## Verify Installation
-Confirm your setup with these commands:
-### java -version
-gradle -v
-git --version
+- Confirm your setup with these commands:
+  - `java -version`
+  - `gradle -v`
+  - `git --version`
 
 ## Setup
 
