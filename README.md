@@ -64,15 +64,16 @@ sa-id-validator/
 ├── gradlew                    # Gradle wrapper script (Unix)
 ├── gradlew.bat                # Gradle wrapper script (Windows)
 └── README.md                  # This file
-
-
+```
 
 ## Running Tests
-Tests are implemented using JUnit Jupiter and follow TDD principles.
- To execute tests:
-  - `./gradlew test`
 
-View test results in the build/reports/tests/test directory.
+Tests are implemented using **JUnit Jupiter** and follow TDD principles.  
+To execute tests:
+
+- `./gradlew test`
+
+View test results in the `build/reports/tests/test` directory.
 
 ## Contributing
 
@@ -87,4 +88,5 @@ Contributions are encouraged! To contribute:
 For significant changes, please open an issue first to discuss your ideas.
 
 ## License
-This project is licensed under the MIT License.
+
+This project is licensed under the **MIT License**.
