@@ -30,11 +30,10 @@ Targets Java 21 for modern language features
 
 ## Prerequisites
 Ensure the following tools are installed:
-
-Java 21 (e.g., Adoptium OpenJDK)
-Gradle (included via Gradle wrapper)
-Git
-IDE (recommended: Visual Studio Code with Extension Pack for Java, or IntelliJ IDEA)
+- Java 21 (e.g., Adoptium OpenJDK)
+- Gradle (included via Gradle wrapper)
+- Git
+- IDE (recommended: Visual Studio Code with Extension Pack for Java, or IntelliJ IDEA)
 
 ## Verify Installation
 - Confirm your setup with these commands:
