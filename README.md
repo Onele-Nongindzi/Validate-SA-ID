@@ -47,3 +47,19 @@ Ensure the following tools are installed:
 java -version
 gradle -v
 git --version
+
+### 📌 Getting Started
+To run the app locally:
+
+bash
+Copy
+Edit
+./gradlew build
+./gradlew run
+Ensure Java and Gradle are installed on your machine.
+
+### 🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change or improve.
+
+### 📄 License
+This project is licensed under the MIT License.
