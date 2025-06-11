@@ -43,7 +43,7 @@ Ensure the following tools are installed:
 
 ## Setup
 
-- Clone the repository:git clone https://github.com/your-username/sa-id-validator.git
+- 'Clone the repository:git clone https://github.com/your-username/sa-id-validator.git'
 - cd sa-id-validator
 
 
