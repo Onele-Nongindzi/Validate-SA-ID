@@ -43,8 +43,8 @@ Ensure the following tools are installed:
 
 ## Setup
 
-Clone the repository:git clone https://github.com/your-username/sa-id-validator.git
-cd sa-id-validator
+- Clone the repository:git clone https://github.com/your-username/sa-id-validator.git
+- cd sa-id-validator
 
 
 Verify that Java 21 is your active JDK.
