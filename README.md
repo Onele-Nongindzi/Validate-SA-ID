@@ -47,8 +47,8 @@ Ensure the following tools are installed:
 - The Gradle wrapper (gradlew) is included, so no separate Gradle installation is needed.
 
 ## Usage
-To build and run the application:
-./gradlew build
+- To build and run the application:
+ ```./gradlew build
 ./gradlew run
 
 The application validates South African ID numbers based on the specified criteria.
