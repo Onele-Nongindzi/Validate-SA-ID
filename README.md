@@ -38,7 +38,7 @@ IDE (recommended: Visual Studio Code with Extension Pack for Java, or IntelliJ I
 
 ## Verify Installation
 Confirm your setup with these commands:
-java -version
+### java -version
 gradle -v
 git --version
 
