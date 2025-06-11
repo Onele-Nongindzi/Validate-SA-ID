@@ -4,13 +4,13 @@ A Java-based project for validating South African ID numbers using Test-Driven D
 ## Table of Contents
 
 - Features
-- Prerequisites'
-Setup
-Usage
-Project Structure
-Running Tests
-Contributing
-License
+- Prerequisites
+- Setup
+- Usage
+- Project Structure
+- Running Tests
+- Contributing
+- License
 
 ## Features
 
