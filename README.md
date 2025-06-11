@@ -48,9 +48,9 @@ Ensure the following tools are installed:
 
 ## Usage
 - To build and run the application:
-  ```bash
  ./gradlew build
  ./gradlew run
+    - `./gradlew run`
 
 ## Running Tests
 Tests are implemented using JUnit Jupiter and follow TDD principles.
