@@ -42,9 +42,9 @@ Ensure the following tools are installed:
   - `git --version`
 
 ## Setup
-
-- 'Clone the repository:git clone https://github.com/your-username/sa-id-validator.git'
-- cd sa-id-validator
+bash
+Clone the repository:git clone https://github.com/your-username/sa-id-validator.git
+cd sa-id-validator
 - Verify that Java 21 is your active JDK.
 - The Gradle wrapper (gradlew) is included, so no separate Gradle installation is needed.
 
