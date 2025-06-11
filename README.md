@@ -48,6 +48,7 @@ Ensure the following tools are installed:
 
 ## Usage
 - To build and run the application:
+  ```bash
  ./gradlew build
  ./gradlew run
 
