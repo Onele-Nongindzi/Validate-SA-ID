@@ -13,20 +13,17 @@ A Java-based project for validating South African ID numbers using Test-Driven D
 - License
 
 ## Features
-
-Validates 13-digit South African ID numbers
-Performs the following checks:
-- ✅ Correct length (13 digits)
-- 🔢 Numeric content
-- 📅 Valid date of birth (YYMMDD format)
-- 🚻 Gender (derived from sequence number)
-- 🏳️ Citizenship status
-- ✔️ Checksum (using Luhn algorithm)
-
-
-Developed using TDD for reliable and maintainable code
-Built with Gradle and tested with JUnit Jupiter
-Targets Java 21 for modern language features
+- Validates 13-digit South African ID numbers
+- Performs the following checks:
+  - ✅ Correct length (13 digits)
+  - 🔢 Numeric content
+  - 📅 Valid date of birth (YYMMDD format)
+  - 🚻 Gender (derived from sequence number)
+  - 🏳️ Citizenship status
+  - ✔️ Checksum (using Luhn algorithm)
+- Developed using TDD for reliable and maintainable code
+- Built with Gradle and tested with JUnit Jupiter
+- Targets Java 21 for modern language features
 
 ## Prerequisites
 Ensure the following tools are installed:
