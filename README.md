@@ -51,6 +51,20 @@ Ensure the following tools are installed:
     - `./gradlew build`
     - `./gradlew run`
 
+## Project Structure
+
+```plain
+sa-id-validator/
+├── src/
+│   ├── main/
+│   │   └── java/              # Application source code
+│   └── test/
+│       └── java/              # JUnit Jupiter test cases
+├── build.gradle               # Gradle build configuration
+├── gradlew                    # Gradle wrapper script (Unix)
+├── gradlew.bat                # Gradle wrapper script (Windows)
+└── README.md                  # This file
+
 ## Running Tests
 Tests are implemented using JUnit Jupiter and follow TDD principles.
  To execute tests:
