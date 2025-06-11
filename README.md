@@ -48,21 +48,8 @@ Ensure the following tools are installed:
 
 ## Usage
 - To build and run the application:
- ```./gradlew build
- ```./gradlew run
-
-The application validates South African ID numbers based on the specified criteria.
-## Project Structure
-sa-id-validator/
-├── src/
-│   ├── main/
-│   │   └── java/                # Application source code
-│   └── test/
-│       └── java/                # JUnit Jupiter test cases
-├── build.gradle                 # Gradle build configuration
-├── gradlew                      # Gradle wrapper script (Unix)
-├── gradlew.bat                  # Gradle wrapper script (Windows)
-└── README.md                    # This file
+ ./gradlew build
+ ./gradlew run
 
 ## Running Tests
 Tests are implemented using JUnit Jupiter and follow TDD principles.
@@ -70,11 +57,12 @@ Tests are implemented using JUnit Jupiter and follow TDD principles.
  - `./gradlew test`
 
 View test results in the build/reports/tests/test directory.
+
 ## Contributing
 Contributions are encouraged! To contribute:
 
-1. Fork the repository.
-2. Create a feature branch (git checkout -b feature/your-feature).
+Fork the repository.
+Create a feature branch (git checkout -b feature/your-feature).
 Commit your changes (git commit -m "Add your feature").
 Push to the branch (git push origin feature/your-feature).
 Submit a pull request.
