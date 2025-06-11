@@ -54,19 +54,21 @@ Ensure the following tools are installed:
 ## Running Tests
 Tests are implemented using JUnit Jupiter and follow TDD principles.
  To execute tests:
- - `./gradlew test`
+  - `./gradlew test`
 
 View test results in the build/reports/tests/test directory.
 
 ## Contributing
+
 Contributions are encouraged! To contribute:
 
-Fork the repository.
-Create a feature branch (git checkout -b feature/your-feature).
-Commit your changes (git commit -m "Add your feature").
-Push to the branch (git push origin feature/your-feature).
-Submit a pull request.
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m "Add your feature"`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Submit a pull request.
 
 For significant changes, please open an issue first to discuss your ideas.
+
 ## License
 This project is licensed under the MIT License.
